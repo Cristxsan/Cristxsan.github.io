@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Hey! i'm Cristóbal</h1>
+        <p>Welcome to my personal page.</p>
+    </header class="header">
 
+    <section>
+        <h2>Personal description</h2>
+        <p>Sup! Cristóbal here, a 23 years old guy, born and raised in Santiago de Chile.
+            I'm currently studying civil engineering in computing, so i do like a lot video games mostly FPS
+            but i also enjoy the ones with a good story. I'm a person who likes to try new things 
+            last one was climbing wall and lately i've been learning how to play the guitar</p>
+    </section>
+
+    <section>
+        <h2>This is me</h2>
+        <img src="mi_foto.jpg" alt="Mi Foto Personal" width="200">
+    </section>
+
+    <section>
+        <h2>Leave you message</h2>
+        <input type="text" id="userInput" placeholder="If you like write something">
+        <button onclick="updateText()">Tipe</button>
+        <p id="displayText">Here will show you message...</p>
+    </section>
+
+    <section>
+        <h2>Link of interest</h2>
+        <p>Visit <a href="https://www.github.com/" target="_blank">GitHub</a> for more info of the development.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 - My personal page</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
