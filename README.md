@@ -1,1 +1,1 @@
-This is the repo for Lab01 of my new page
+This is the repo for Labs of my new page
