@@ -1,48 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My personal page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My personal page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Hey! i'm Cristóbal</h1>
-        <p>Welcome to my personal page.</p>
-    </header class="header">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Cristóbal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Main</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#news">News</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <section>
+  <header class="header text-center py-4 bg-dark text-white">
+    <h1>Hey! I'm Cristóbal</h1>
+    <p>Welcome to my personal page.</p>
+  </header>
+
+  <section id="about" class="container my-4">
+    <div class="row">
+      <div class="col-12">
         <h2>Personal description</h2>
-        <p>Sup! Cristóbal here, a 23 years old guy, born and raised in Santiago de Chile. I like music, good movies
-            and some times read books from Dostoievski, Kafka, Cortazar and others. 
-            I'm currently studying civil engineering in computing, so i do like a lot video games mostly FPS
-            but i also enjoy the ones with a good story. I'm a person who likes to try new things 
-            last one was climbing wall and lately i've been learning how to play the guitar.</p>
-    </section>
+        <p>Sup! Cristóbal here, a 23 years old guy, born and raised in Santiago de Chile. I like music, good movies,
+          and sometimes read books from Dostoievski, Kafka, Cortazar, and others. I'm currently studying civil engineering
+          in computing, so I like video games, mostly FPS, but I also enjoy the ones with a good story. I'm a person who likes
+          to try new things; the last one was climbing wall and lately I've been learning how to play the guitar.</p>
+      </div>
+    </div>
+  </section>
 
-    <section>
+  <section class="container my-4">
+    <div class="row">
+      <div class="col-12">
         <h2>This is me</h2>
-        <img src="mi_foto.jpg" alt="Mi Foto Personal" width="200">
-    </section>
+        <img src="mi_foto.jpg" alt="Mi Foto Personal" class="img-fluid rounded">
+      </div>
+    </div>
+  </section>
 
-    <section>
-        <h2>Leave you message</h2>
-        <input type="text" id="userInput" placeholder="If you like write something">
-        <button onclick="updateText()">Type</button>
-        <p id="displayText">Here will show you message...</p>
-    </section>
+  <section class="container my-4">
+    <div class="row">
+      <div class="col-12">
+        <h2>Leave your message</h2>
+        <input type="text" id="userInput" class="form-control" placeholder="If you like, write something">
+        <button class="btn btn-primary mt-2" onclick="updateText()">Type</button>
+        <p id="displayText" class="mt-2">Here will show your message...</p>
+      </div>
+    </div>
+  </section>
 
-    <section>
-        <h2>Link of interest</h2>
-        <p>If you like Rap, Trap or R&B. Here i leave you a <a href="https://open.spotify.com/playlist/6I0YPHziDrog2xk1mvJRJx?si=36158f120b804fd6" target="_blank">Spotify</a> playlist that i made check it out!
-        <br><br> Visit <a href="https://github.com/Cristxsan/Cristxsan.github.io" target="_blank">GitHub</a> for more info of the development.</p>
-    </section>
+  <section id="news" class="container my-4">
+    <h2 class="mb-4">Latest Music News</h2>
+    <div id="newsContainer" class="row g-3">
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 - My personal page</p>
-    </footer>
+  <footer class="bg-primary text-white text-center py-3">
+    <p>&copy; 2025 - My personal page</p>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
